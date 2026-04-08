@@ -23,7 +23,7 @@ const Login = () => {
        localStorage.setItem('refreshToken', response.data.refresh)
        console.log('Login Successful')
        setIsLoggedIn(true)
-       navigate('/')
+       
     } catch(error){
       console.log('invalid credentials')
       setError('Invalid credentials')
